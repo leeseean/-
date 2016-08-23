@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>文字闪烁效果</title>
+</head>
+<body>
+  <div id="bink">
+    哈哈哈哈
+  </div>
+</body>
+<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer>
+  var oBink = document.getElementById('bink');
+  var aColor = ['red','orange','yellow','green','pink','blue','purple'];
+  function changeColor(){
+    oBink.style.color = aColor[Math.round((Math.random())*aColor.length)]
+  };
+  setInterval(changeColor,200);
+</script>
+</html>
